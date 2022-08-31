@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Mais seletores</title>
+  <style>
+    /* esse é um seletor descendente, representado pelo espaço em branco. estamos pegando todos os p's que sejam filhos diretos ou indiretos de um article */
+    article p {
+      padding: 12px;
+      background-color: lightgray;
+    }
+
+    /* esse é um seletor CSS de filho direto */
+    article > p {
+      border: 1px solid black;
+    }
+
+
+    #principal p.promocao {
+      padding: 12px;
+      background-color: aliceblue;
+    }
+
+    body #principal article section p.coordenadores {
+      text-align: center;  
+    }
+
+    /* main > article section > p.coordenadores {
+
+    }
+
+    #id1 > .classe.classe2 p p div#id2 > span > footer > p#id3 {
+
+    } */
+  </style>
+</head>
+<body>
+  <main id="principal">
+    <h1 id="titulo">Portal de cursos</h1>
+
+    <p id="descricao">Possuimos cursos nas mais diversas áreas</p>
+
+    <p class="promocao nova">
+        Venha conversar conosco e conhecer nossas ofertas de <strong>bolsas de estudos</strong>        
+    </p>
+
+    <p>Cursos:</p>
+    <article>
+      <p class="novo-curso">Ciência da Computação</p>
+      <p class="novo-curso">Sistemas de Informação</p>
+      <p class="curso">Farmácia</p>
+      <section>
+        <p class="coordenadores">Coordenadores à disposição!</p>
+      </section>
+    </article>
+
+    <p id="contato" class="final-pagina">Entre em contato: 11223344</p>
+    <p id="rodape" class="final-pagina">Todos os direitos</p>
+
+  </main>
+</body>
+</html>
